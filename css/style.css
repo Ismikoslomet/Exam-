@@ -1,0 +1,411 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+}
+/* (in accessibility.html) is the soures used in the css design*/
+/*This is the first header to the main index file*/
+
+/*nr 1 in design soures*/
+.header1 {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("../images/bakgrunn.webp"); /* soure under nr1 images*/
+  background-blend-mode: dark;
+  background: linear-gradient(to top rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5));
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/*this is the base for the navbar we use on all the pages (nr1 in soures design)*/
+nav {
+  display: flex;
+  padding: 2% 26% 8%;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 0;
+  padding-right: 0;
+  width: 100%;
+}
+/*for the outlook on the links (nr1)*/
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+/*this is the design of the nav bar(nr1)*/
+.nav-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* to give the links a placement(nr1)*/
+.nav-links ul li {
+  display: inline-block;
+  margin-left: 50px;
+}
+.nav-links ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+  font-size: 13px;
+}
+/*this function is for makin the links white when you hover over (nr1)*/
+ul li a:hover {
+  color: black;
+}
+/*to make a heading for the frontpage (nr1)*/
+.text-box {
+  width: 90%;
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*the logo in the middle of the page(nr1)*/
+.text-box h1 {
+  font-size: 62px;
+}
+/*the subheading underneath the main headings(nr1)*/
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: white;
+}
+/*this is for the link to the oslomet page*/
+.more-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  background-color: white;
+  padding: 12px 34px;
+  font-size: 13px;
+  position: relative;
+  cursor: pointer;
+  background: transparent;
+}
+/*to make a hover effect to the button (nr1)*/
+
+.more-btn:hover {
+  background-color: orange;
+  transition: 1s;
+  border: 1px solid orange;
+}
+
+/*this is for the first h1 on the page and a little text under (nr1 and 3)*/
+.oslomet-campus {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+.oslomet-campus h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+.oslomet-campus h2 {
+  font-size: 36px;
+  font-weight: 600;
+}
+.oslomet-campus p {
+  color: black;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+/*to make the row effect on the collunms under under the first h2*/
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* to show off how we can make text collums with color and it made for some fun design*/
+.course-col {
+  flex-basis: 31%;
+  background: orange;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+h2 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+/*we wanted a small hover effect on out collums*/
+.course-col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.4);
+}
+/*campus*/
+/*this is some more design. here we have 3 images of the school campus*/
+.campus {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.campus-info {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+/* desing og the img (nr 3)*/
+.campus-info img {
+  width: 100%;
+  display: block;
+}
+/*this is the layer effect that makes the orange pop up with text*/
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+/*when you hover over it this will happen (nr1)*/
+.layer:hover {
+  background: rgba(255, 120, 17, 0.825);
+}
+/*to make the text pop up when you hover*/
+.layer h3 {
+  width: 100%;
+  font-weight: 500;
+  color: white;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+/*when you hover over it this will happen (nr2)*/
+.layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+} /*ends here*/
+
+/*in this part we just tok 3 images from the OsloMet web site to show of some of 
+thefacilies the uni has (nr 1) */
+.facilities {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+/*this is for the collums that the images are goiging to be inside (nr1) */
+.facilities-col {
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+}
+/*fix the img and n1 and 3 in design*/
+.facilities-col img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.facilities-col p {
+  padding: 0;
+}
+.facilities-col h3 {
+  margin-top: 16px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/*------- CSS for all but one site ------- */
+
+.sub-header {
+  height: 8vh;
+  width: 100%;
+  background-size: cover;
+  text-align: left;
+  position: relative;
+  color: orange;
+  background-color: orange;
+}
+
+.sub-header h1 {
+  margin-top: 10px;
+}
+/* nr1 in design*/
+.canteen {
+  width: 80%;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+.canteen-col {
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+.canteen-col img {
+  width: 100%; /* Adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.canteen-col h1 {
+  padding-top: 0;
+  font-size: 20px;
+  margin-bottom: 1px;
+  color: orange;
+  font-weight: 400;
+}
+
+.canteen-col p {
+  padding: 15px 0 25px;
+  margin: 10px 0 40px;
+  font-size: 16px;
+  line-height: 1.5;
+  padding-top: 20px;
+}
+/* design for the meny*/
+.red-btn {
+  border: 1px solid orange;
+  background: transparent;
+  color: orange;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 12px 34px;
+  font-size: 13px;
+}
+
+.red-btn:hover {
+  color: #fff;
+}
+.canteen img {
+  padding-top: 50px;
+  max-width: 30%;
+  height: auto;
+  margin-bottom: 10px;
+  display: block;
+  margin: auto;
+}
+/* the img on the topical page*/
+.topical img {
+  width: 100%;
+}
+
+.topical_picture1 {
+  max-width: 50%;
+  height: auto;
+  margin-bottom: 10px;
+  display: block;
+  margin: auto;
+}
+.Topical_picture2 {
+  max-width: 30%;
+  height: auto;
+  margin-bottom: 10px;
+  display: block;
+  margin: auto;
+}
+
+/* styles elements in the class container */
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+/* applies Flexbox layout properties to elements with the class .row */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* removes the default bullet points or numbering (list-style) from unordered list */
+ul {
+  list-style: none;
+}
+
+/* Styling of the footer (nr 2 and 3) this is for all off the footer */
+.footer {
+  background-color: rgb(250, 162, 0);
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* defining the width and padding for elements with the class .footer-col */
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+/* styles the h4 element in the footer */
+.footer-col h4 {
+  font-size: 18px;
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
+  text-decoration: underline;
+}
+
+/*  targets specific elements within elements having the class .footer-col */
+.footer-col ul li {
+  color: white;
+}
+
+/* creates a margin between each item of the list except the last one */
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+/* selects and styles anchor elements within the list */
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  color: white;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+/* creates a hover effect on the anchor element */
+.footer-col ul li a:hover {
+  color: rgba(255, 255, 255, 0.493);
+  padding-left: 10px;
+}
+
+/* styles the article element (nr 3) */
+article {
+  margin: auto;
+  text-align: center;
+  text-align: justify;
+  display: block;
+  font-family: "Times New Roman", Times, serif;
+  padding: 1px;
+  max-width: 70%;
+}
